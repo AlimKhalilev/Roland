@@ -1526,32 +1526,18 @@ class ContentSelect {
 
 ContentSelect.createMarkup();
 ContentSelect.initEvents();
-let swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+let swiper = new Swiper(".fullPage__swiper", {
+    direction: "vertical",
+    slidesPerView: 1,
     spaceBetween: 0,
-    grabCursor: true,
+    mousewheel: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        // when window width is >= 100px
-        100: {
-            slidesPerView: 1
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
-        // when window width is >= 576px
-        576: {
-            slidesPerView: 2
-        },
-        // when window width is >= 768px
-        768: {
-            slidesPerView: 4
-        }
-    }
+    },
 });
 
 document.querySelectorAll(".version").forEach(item => { // устанавливаем на нужных элементах версию разработки

@@ -26,7 +26,15 @@ $media_sm: "max-width: " + $screen_sm;
 $media_xs: "max-width: " + $screen_xs;
 //  АДАПТИВ БЕЗ ПРОМЕЖУТКОВ  \\
 
-.section__inner {
+.fullPage__pagination {
+    right: calc((100vw - #{$screen_base_container}) / 2);
+
+    @media ($media_xl) {
+        right: calc((100vw - #{$screen_xl_container}) / 2);
+    }
+}
+
+.gridInner {
     margin: 0 auto;
     max-width: $screen_base_container;
 

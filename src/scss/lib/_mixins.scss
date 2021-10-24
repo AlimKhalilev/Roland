@@ -4,7 +4,7 @@
 
 :root {
     --section_indent: 3rem;
-    --header-min-height: 5rem;
+    --header-min-height: 6.25rem;
 
     @media ($media_sm) {
         --section_indent: 2rem;
@@ -19,9 +19,9 @@
 }
 
 html, body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     line-height: 1.5;
-    background-color: $color_body_bg;
+    background-color: $color_bg_main;
     font-size: 16px;
 
     @media ($media_xl) {
@@ -79,10 +79,21 @@ html, body {
     visibility: hidden;
 }
 
+.pageSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+
+    &__inner {
+        padding-right: 6.25rem;
+    }
+}
+
 .section {
     margin-top: var(--section_indent);
 
-    &__header {
+    &__inner {
         margin-bottom: 1.2rem;
     }
 
@@ -104,12 +115,17 @@ html, body {
 }
 
 .blockTitle {
-    font-size: 2.2rem;
-    text-align: center;
+    font-size: 3.125rem;
+    padding: 0.8rem 0;
+    font-weight: 600;
+    display: inline-block;
 
-    @media ($media_sm) {
-        font-size: 1.8rem;
-    }
+    color: #fff;
+    background-image: url("../img/blockTitleLine.svg");
+    background-position: left bottom;
+    background-size: 100% 37px;
+    background-repeat-y: no-repeat;
+    text-decoration: none;
 }
 
 .imgMax {

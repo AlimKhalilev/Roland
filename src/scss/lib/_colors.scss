@@ -1,9 +1,12 @@
 // [[ Цвета, используемые в проекте. Должны начинаться с $color_ ]]
 
 $color_black_main: #222;
-$color_body_bg: #E5E5E5;
-$color_header: #fff;
-$color_primary: tomato;
+
+$color_bg_main: #2A2A2A;
+$color_bg_secondary: #323232;
+
+$color_header: $color_bg_main;
+$color_primary: #F0343B;
 //$color_primary: #3E54D8;
 
 $color_danger: #ED6373;
