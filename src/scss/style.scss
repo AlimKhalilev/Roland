@@ -95,13 +95,17 @@
     // .fullPage__wrapper
 
     &__wrapper {
-
+        
     }
 
     // .fullPage__section
 
     &__section {
+        // .fullPage__section--bgLight
 
+        &--bgLight {
+            background-color: $color_bg_secondary;
+        }
     }
 
     // .fullPage__paginationWrapper
@@ -114,13 +118,126 @@
 
     &__pagination {
         position: absolute;
+        transition: 0.3s ease-in-out;
+
+        &--hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
     }
 }
 
 .main {
-    height: inherit;
-    background-image: linear-gradient(90deg, #242424 0.6%, rgba(36, 36, 36, 0.6) 51.29%, rgba(36, 36, 36, 0) 70.28%), url(../img/bg_main_clean.png);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
+
+    // .main__background
+
+    &__background {
+        position: absolute;
+        left: 0;
+        top: 6.25rem;
+        height: calc(100% - 6.25rem);
+        width: 100%;
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #242424 0.6%, rgba(36, 36, 36, 0.6) 51.29%, rgba(36, 36, 36, 0) 70.28%);
+        }
+    }
+
+    // .main__container
+
+    &__container {
+        position: relative;
+        //padding-bottom: 5rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    // .main__info
+
+    &__info {
+        width: 70%;
+    }
+
+    // .main__title
+
+    &__title {
+        font-size: 3.4375rem;
+        color: $color_white;
+        line-height: 1.27;
+    }
+
+    // .main__btn
+
+    &__btn {
+        margin-top: 4rem;
+    }
+}
+
+.advantages {
+    display: flex;
+
+    // .advantages__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // .advantages__info
+
+    &__info {
+        display: flex;
+    }
+
+    // .advantages__item
+
+    &__item {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+    }
+
+    // .advantages__title
+
+    &__title {
+
+    }
+
+    // .advantages__card
+
+    &__card {
+        margin-top: 2.5rem;
+        height: 100%;
+    }
+
+    // .advantages__descr
+
+    &__descr {
+        margin-top: 2.5rem;
+
+        font-size: 1.125rem;
+        color: $color_light;
+        font-weight: 500;
+        line-height: 1.5;
+    }
 }

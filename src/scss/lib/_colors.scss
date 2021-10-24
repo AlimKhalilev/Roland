@@ -2,12 +2,17 @@
 
 $color_black_main: #222;
 
-$color_bg_main: #2A2A2A;
+$color_bg_main: #2B2B2B;
 $color_bg_secondary: #323232;
+$color_bg_dark: #2A2A2A;
+
+$color_light: rgba(255, 255, 255, 0.8);
 
 $color_header: $color_bg_main;
 $color_primary: #F0343B;
-//$color_primary: #3E54D8;
+$color_primary_hover: #E12C33;
+$color_primary_shadow: rgba(214, 0, 0, 0.25);
+$color_primary_active: #D82027;
 
 $color_danger: #ED6373;
 $color_warning: #F3B63F;
