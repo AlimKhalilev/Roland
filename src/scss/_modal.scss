@@ -8,11 +8,16 @@
     transition: 0.3s ease-in-out;
     z-index: 21;
 
-    padding: 3.5rem;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
-    background-color: $color_white;
-    width: 34rem;
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+    background-color: $color_bg_modal;
+    width: 25rem;
+
+    &--command {
+        padding: 0;
+        background-color: $color_bg_secondary;
+        width: 70rem;
+    }
 
     &.visible {
         top: 50%;
@@ -33,7 +38,6 @@
     // .modal__header
 
     &__header {
-        text-align: center;
         line-height: 1.27;
         margin-bottom: 2.5rem;
     }
@@ -44,20 +48,19 @@
         position: absolute;
         right: 0;
         top: 0;
-        height: 2.8rem;
-        width: 2.8rem;
-        box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.16);
-        transform: translate(40%, -40%);
-        background-color: $color_white;
+        height: 2rem;
+        width: 2rem;
+        transform: translate(0%, -140%);
+        background-color: $color_tag;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.95rem;
         cursor: pointer;
 
         svg {
-            fill: $color_black_main;
+            fill: $color_white;
+            font-size: 1rem;
         }
     }
 
@@ -85,6 +88,29 @@
 
     &__button {
 
+    }
+
+    // .modal__form
+
+    &__form {
+
+        .c-field {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            &__input {
+                width: 100%;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            justify-content: center;
+            margin-top: 1rem;
+        }
     }
 }
 

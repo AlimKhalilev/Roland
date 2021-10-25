@@ -21,3 +21,7 @@
 document.querySelectorAll(".version").forEach(item => { // устанавливаем на нужных элементах версию разработки
     item.innerHTML = "1.2.4";
 });
+
+$(".field__input--number").each(function() {
+    $(this).mask("+380 99 999 9999");
+});

@@ -1416,12 +1416,12 @@ class Intersection {
 
             this.animObserver.observe(item); // закидываем слушателя на все необходимые элементы
 
-            item.addEventListener("mouseenter", function(e) { // вешаем событие на наведение мыши (доп. функционал)
-                item.classList.remove(item.dataset.animation);
-                setTimeout(() => {
-                    item.classList.add(item.dataset.animation);
-                }, 70);
-            });
+            // item.addEventListener("mouseenter", function(e) { // вешаем событие на наведение мыши (доп. функционал)
+            //     item.classList.remove(item.dataset.animation);
+            //     setTimeout(() => {
+            //         item.classList.add(item.dataset.animation);
+            //     }, 70);
+            // });
         });
     }
 }
@@ -1530,6 +1530,7 @@ let swiper = new Swiper(".fullPage__swiper", {
     direction: "vertical",
     slidesPerView: 1,
     spaceBetween: 0,
+    //effect: "fade",
     mousewheel: true,
     pagination: {
         el: ".swiper-pagination",
@@ -1572,4 +1573,8 @@ let swiperPublications = new Swiper(".publications__swiper", {
 
 document.querySelectorAll(".version").forEach(item => { // устанавливаем на нужных элементах версию разработки
     item.innerHTML = "1.2.4";
+});
+
+$(".field__input--number").each(function() {
+    $(this).mask("+380 99 999 9999");
 });

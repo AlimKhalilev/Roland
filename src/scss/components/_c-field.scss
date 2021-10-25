@@ -1,7 +1,7 @@
 
 .c-field {
     --iconSize: 1.4rem;
-    --inputPaddingX: 1.2rem;
+    --inputPaddingX: 1rem;
     $color_main: $color_primary;
 
     display: inline-flex;
@@ -30,6 +30,8 @@
 
     &__title {
         margin-right: 0.5rem;
+        color: $color_input_label;
+        font-weight: 500;
     }
 
     // .c-field__area
@@ -67,13 +69,14 @@
         display: inline-flex;
         border: none;
         outline: none;
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
         padding: 0 var(--inputPaddingX);
         font-weight: 500;
-        height: 3.2rem;
-        border: 1px solid lighten($color_main, 15%);
+        height: 3.5rem;
         transition: 0.3s ease-in-out;
         max-width: 100%;
+        background-color: $color_bg_secondary;
+        color: $color_input_label;
 
         &--textarea {
             resize: none;

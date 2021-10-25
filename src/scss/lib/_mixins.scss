@@ -43,10 +43,13 @@ html, body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease-in-out;
+
+    //background-color: #000;
+    background-color: $color_overlay;
+    backdrop-filter: blur(4px);
 
     &--burger {
         z-index: 10;
@@ -58,7 +61,8 @@ html, body {
 
     &.visible {
         visibility: visible;
-        opacity: 0.8;
+        background-color: $color_overlay;
+        opacity: 1;
     }
 }
 
@@ -123,6 +127,16 @@ html, body {
     background-size: 100% 37px;
     background-repeat-y: no-repeat;
     text-decoration: none;
+
+    &--modal {
+        font-size: 1.6rem;
+        background-size: 100% 20px;
+        padding: 0.5rem 0;
+    }
+
+    &.animated {
+        opacity: 0;
+    }
 }
 
 .imgMax {

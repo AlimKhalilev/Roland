@@ -101,6 +101,8 @@
     // .fullPage__section
 
     &__section {
+        background-color: $color_bg_main;
+
         // .fullPage__section--bgLight
 
         &--bgLight {
@@ -222,7 +224,7 @@
     // .advantages__title
 
     &__title {
-
+        
     }
 
     // .advantages__card
@@ -506,5 +508,283 @@
 
     &__card {
 
+    }
+}
+
+.command {
+
+    // .command__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+    }
+
+    // .command__header
+
+    &__header {
+
+    }
+
+    // .command__title
+
+    &__title {
+    }
+
+    // .command__picture
+
+    &__picture {
+        margin: 2rem 0;
+        height: 100%;
+        position: relative;
+
+        picture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.tag {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+
+    &--reverse {
+        align-items: flex-end;
+    }
+
+    // .tag__target
+
+    &__target {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        background-color: $color_tag;
+        border-radius: 50%;
+        @include cursorPointer;
+
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            background-color: $color_white;
+            border-radius: 50%;
+        }
+    }
+
+    // .tag__label
+
+    &__label {
+        background: $color_tag;
+        backdrop-filter: blur(1rem);
+        border-radius: 0.25rem;
+
+        padding: 1.5rem;
+        color: $color_white;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 1rem;
+    }
+
+    // .tag__name
+
+    &__name {
+        font-weight: 600;
+    }
+
+    // .tag__profession
+
+    &__profession {
+        line-height: 1.5;
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+
+.commandCard {
+    position: relative;
+
+    // .commandCard__textBg
+
+    &__textBg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        letter-spacing: 0.02em;
+        color: $color_bg_projects;
+
+        font-size: 17rem;
+        font-weight: 700;
+    }
+
+    // .commandCard__content
+
+    &__content {
+        position: relative;
+        padding: 3.5rem;
+        padding-right: 31rem;
+    }
+
+    // .commandCard__header
+
+    &__header {
+        padding-bottom: 1.5rem;
+
+        .commandCard__arrow {
+            transform: rotate(180deg);
+        }
+    }
+
+    // .commandCard__link
+
+    &__link {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $color_white;
+        letter-spacing: 0.05em;
+
+        padding-left: 1rem;
+    }
+
+    // .commandCard__body
+
+    &__body {
+        color: $color_light;
+        padding: 1.5rem 0;
+        border-top: 1px solid $color_card_line;
+        border-bottom: 1px solid $color_card_line;
+    }
+
+    // .commandCard__about
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        color: $color_white;
+    }
+
+    // .commandCard__name
+
+    &__name {
+        font-weight: 600;
+    }
+
+    // .commandCard__profession
+
+    &__profession {
+        display: inline-block;
+        margin-top: 0.4rem;
+    }
+
+    // .commandCard__descr
+
+    &__descr {
+        line-height: 1.5;
+        margin: 1.5rem 0;
+    }
+
+    // .commandCard__list
+
+    &__list {
+        list-style-type: disc;
+        padding-left: 1rem;
+    }
+
+    // .commandCard__listItem
+
+    &__listItem {
+        line-height: 1.5;
+
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    // .commandCard__footer
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 1.5rem;
+
+        .commandCard__btn {
+
+            &:first-child {
+                .commandCard__arrow {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    // .commandCard__btn
+
+    &__btn {
+        background-color: unset;
+        border: none;
+        @include cursorPointer;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+
+        .commandCard__about {
+            align-items: start;
+            margin: 0 1.5rem;
+        }
+    }
+
+    // .commandCard__arrow
+
+    &__arrow {
+
+        picture {
+            display: flex;
+            width: 0.5rem;
+
+            img {
+
+            }
+        }
+    }
+
+    // .commandCard__img
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 30rem;
+
+        picture {
+            display: flex;
+
+            img {
+
+            }
+        }
     }
 }

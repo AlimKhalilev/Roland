@@ -2,6 +2,7 @@ let swiper = new Swiper(".fullPage__swiper", {
     direction: "vertical",
     slidesPerView: 1,
     spaceBetween: 0,
+    //effect: "fade",
     mousewheel: true,
     pagination: {
         el: ".swiper-pagination",
