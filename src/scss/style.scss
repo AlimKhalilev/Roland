@@ -168,12 +168,13 @@
 
         display: flex;
         align-items: center;
+        height: 90%;
     }
 
     // .main__info
 
     &__info {
-        width: 70%;
+        width: 56rem;
     }
 
     // .main__title
@@ -182,6 +183,7 @@
         font-size: 3.4375rem;
         color: $color_white;
         line-height: 1.27;
+        font-weight: 600;
     }
 
     // .main__btn
@@ -192,7 +194,6 @@
 }
 
 .advantages {
-    display: flex;
 
     // .advantages__inner
 
@@ -200,6 +201,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 95%;
     }
 
     // .advantages__info
@@ -428,6 +430,12 @@
     display: flex;
     flex-direction: column;
 
+    &:hover {
+        .cardPublications__about {
+            color: $color_primary;
+        }
+    }
+
     // .cardPublications__date
 
     &__date {
@@ -444,6 +452,7 @@
     &__about {
         font-size: 1.25rem;
         margin: 1.5rem 0;
+        transition: 0.3s ease-in-out;
     }
 
     // .cardPublications__img
@@ -563,6 +572,7 @@
     position: absolute;
     display: inline-flex;
     flex-direction: column;
+    gap: 1rem;
 
     &--reverse {
         align-items: flex-end;
@@ -602,8 +612,6 @@
         color: $color_white;
         display: flex;
         flex-direction: column;
-
-        margin-top: 1rem;
     }
 
     // .tag__name
@@ -784,6 +792,180 @@
 
             img {
 
+            }
+        }
+    }
+}
+
+.products {
+
+    // .products__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        justify-content: center;
+    }
+
+    // .products__header
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    // .products__title
+
+    &__title {
+
+    }
+
+    // .products__titleCover
+
+    &__titleCover {
+        flex-grow: 1;
+    }
+
+    // .products__titleDescr
+
+    &__titleDescr {
+        min-width: 33rem;
+        max-width: 33rem;
+        margin-left: 2rem;
+        display: inline-block;
+        color: $color_white_opacity;
+    }
+
+    // .products__body
+
+    &__body {
+        display: flex;
+        margin-top: 4.5rem;
+    }
+
+    // .products__content
+
+    &__content {
+        background-color: $color_bg_secondary;
+    }
+
+    // .products__item
+
+    &__item {
+        padding: 0 2px;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    // .products__itemTitle
+
+    &__itemTitle {
+        color: $color_white;
+        font-weight: 600;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    // .products__itemText
+
+    &__itemText {
+        color: $color_white_opacity;
+        line-height: 1.5;
+
+        span {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    // .products__tablist
+
+    &__tablist {
+        min-width: 33rem;
+        max-width: 33rem;
+        margin-left: 2rem;
+    }
+}
+
+.reviews {
+
+    // .reviews__inner
+
+    &__inner {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // .reviews__header
+
+    &__header {
+        
+    }
+
+    // .reviews__body
+
+    &__body {
+        position: relative;
+        margin-top: 4rem;
+    }
+
+    // .reviews__swiper
+
+    &__swiper {
+
+    }
+
+    // .reviews__swiperSlide
+
+    &__swiperSlide {
+        display: flex;
+        background-color: $color_bg_main;
+        padding-top: 3rem;
+    }
+
+    // .reviews__person
+
+    &__person {
+        min-width: 15rem;
+        max-width: 15rem;
+        margin-right: 5rem;
+    }
+
+    // .reviews__content
+
+    &__content {
+        padding: 1rem 0 3.5rem 0;
+        position: relative;
+    }
+
+    // .reviews__thumbsSwiper
+
+    &__thumbsSwiper {
+        width: calc(4rem * 5);
+        position: absolute;
+        left: 20rem;
+        bottom: 0;
+    }
+
+    // .reviews__thumb
+
+    &__thumb {
+        @include cursorPointer;
+
+        picture {
+            display: inline-flex;
+
+            img {
+                border-radius: 0.3rem;
             }
         }
     }

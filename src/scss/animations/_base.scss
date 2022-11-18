@@ -1,6 +1,7 @@
 .animated {
   animation-duration: var(--animate-duration);
   animation-fill-mode: both;
+  opacity: 0;
 }
 
 .animated.infinite {
@@ -32,7 +33,7 @@
 }
 
 .animated.delay-4s {
-  animation-delay: calc(var(--animate-delay) * 4);
+  animation-delay: calc(var(--animate-delay) * 3.5);
 }
 
 .animated.delay-5s {

@@ -1,7 +1,7 @@
 // === header === [ Стили для навбара, используемые на всех страницах ] ===
 
 .header {
-    background-color: $color_header;
+    background: linear-gradient(0deg, #2B2B2B, #2B2B2B), linear-gradient(180deg, #242424 0%, #323232 100%);
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,6 +48,12 @@
     &__controls {
         display: flex;
         align-items: center;
+        width: 100%;
+        margin-left: 5rem;
+
+        @media ($media_xl) {
+            margin-left: 1.5rem;
+        }
 
         @media ($media_sm) {
             flex-direction: column;
@@ -59,35 +65,62 @@
                 width: 90%;
             }
         }
+
+        &.searchActive {
+            .header__search {
+                flex-grow: 1;
+
+                .socialMenu__icon {
+                    display: none;
+                }
+            }
+
+            .header__links {
+                display: none;
+            }
+
+            .c-field {
+                display: block;
+            }
+        }
     }
 
     // .header__links
 
     &__links {
-
+        flex-grow: 1;
+        padding: 0 1.5rem;
+        margin: 0 1.5rem;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     // .header__menu
 
     &__menu {
-
+        justify-content: center;
     }
 
-    // .header__select
+    // .header__search
 
-    &__select {
-        margin-left: 1.6rem;
+    &__search {
+        @include cursorPointer;
+        display: flex;
+        align-items: center;
 
-        @media ($media_sm) {
-            margin: 1.5rem 0 0 0;
+        .socialMenu__icon {
+            margin: 0;
+        }
+
+        .c-field {
+            display: none;
+            margin-right: 1.5rem;
         }
     }
 }
 
 .logo {
-
     display: flex;
-    width: 14rem;
 
     picture {
         display: inline-flex;
@@ -107,12 +140,26 @@
         flex-direction: column;
     }
 
+    &--column {
+        flex-direction: column;
+
+        .menu__item {
+            &:not(:last-child) {
+                margin: 0 0 1.5rem 0;
+            }
+        }
+    }
+
     // .menu__item
 
     &__item {
 
         &:not(:last-child) {
-            margin-right: 1.2rem;
+            margin-right: 2rem;
+
+            @media ($media_xl) {
+                margin-right: 1.5rem;
+            }
 
             @media ($media_sm) {
                 margin: 0 0 0.5rem 0;
@@ -142,6 +189,11 @@
         color: $color_white;
         text-decoration: none;
 
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color_white;
+
         &::after {
             content: "";
             position: absolute;
@@ -149,7 +201,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: $color_black_main;
+            background-color: $color_white;
             transform: scaleX(0);
             transition: 0.3s ease-in-out;
 

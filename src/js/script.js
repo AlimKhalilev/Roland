@@ -25,3 +25,21 @@ document.querySelectorAll(".version").forEach(item => { // устанавлив�
 $(".field__input--number").each(function() {
     $(this).mask("+380 99 999 9999");
 });
+
+// ПЕРЕКЛЮЧЕНИЕ ПОЛЯ ПОИСКА В ХЕАДЕРЕ
+
+let header_search_show = document.querySelector(".header__search .socialMenu__icon");
+let header_search_hide = document.querySelector(".header__search .c-field__icon--left");
+let header_search_class_container = document.querySelector(".header__controls");
+
+if (header_search_show !== null && header_search_hide !== null && header_search_class_container !== null) {
+
+    console.log("eee");
+    header_search_show.addEventListener("click", (e) => {
+        header_search_class_container.classList.toggle("searchActive");
+    });
+
+    header_search_hide.addEventListener("click", (e) => {
+        header_search_class_container.classList.toggle("searchActive");
+    });
+}

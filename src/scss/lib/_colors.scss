@@ -1,6 +1,7 @@
 // [[ Цвета, используемые в проекте. Должны начинаться с $color_ ]]
 
 $color_black_main: #222;
+$color_black_text: #242424;
 
 $color_bg_main: #2B2B2B;
 $color_bg_secondary: #323232;
@@ -16,6 +17,7 @@ $color_overlay: rgba(42, 42, 42, 0.8);
 $color_input_label: rgba(255, 255, 255, 0.6);
 
 $color_bg_modal: #3C3B3B;
+$color_icon_field: #d4d4d4;
 
 $color_light: rgba(255, 255, 255, 0.8);
 
@@ -32,6 +34,7 @@ $color_info: #8C9BEA;
 $color_secondary: #929398;
 $color_dark: #373943;
 $color_white: #FFFFFF;
+$color_white_opacity: rgba(255, 255, 255, 0.8);
 
 $color_burger_show: #222222;
 $color_burger_close: #666666;

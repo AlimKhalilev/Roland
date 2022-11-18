@@ -114,13 +114,13 @@
                         <a class="input-group__elem link" href="#">Перейти куда-то</a>
 
                         <a class="input-group__elem link" href="#here">
-                            <svg class='icon icon-arrow-left link__icon'><use xlink:href='img/sprite.svg#arrow-left'></use></svg>
+                            <svg class='icon icon-arrow-left link__icon'><use xlink:href='img/main.svg#loupe'></use></svg>
                             <span class="link__text">Вернуться обратно</span>
                         </a>
 
                         <a class="input-group__elem link" href="#letsgo">
                             <span class="link__text">Найти что-нибудь</span>
-                            <svg class='icon icon-arrow-left link__icon link__icon--right'><use xlink:href='img/sprite.svg#loupe'></use></svg>
+                            <svg class='icon icon-arrow-left link__icon link__icon--right'><use xlink:href='img/main.svg#loupe'></use></svg>
                         </a>
 
                     </div>
@@ -223,8 +223,23 @@
                             <span class="c-field__title">Форма с иконкой</span>
                             <div class="c-field__area c-field__area--icon">
                                 <input class="c-field__input" type="text" placeholder="Найди меня!" />
-                                <svg class="icon icon-loupe c-field__icon c-field__icon--min">
-                                    <use xlink:href="img/sprite.svg#loupe"></use>
+                                <svg class="c-field__icon">
+                                    <use xlink:href='img/main.svg#loupe'></use>
+                                </svg>
+                            </div>
+                        </label>
+
+                        <label class="input-group__elem c-field">
+                            <span class="c-field__title">Форма с 2 иконками</span>
+                            <div class="c-field__area c-field__area--icon c-field__area--iconDouble">
+                                <div class="c-field__icon c-field__icon--left" role="button">
+                                    <svg>
+                                        <use xlink:href='img/main.svg#close'></use>
+                                    </svg>
+                                </div>
+                                <input class="c-field__input" type="text" placeholder="Найди меня!" />
+                                <svg class="c-field__icon">
+                                    <use xlink:href='img/main.svg#loupe'></use>
                                 </svg>
                             </div>
                         </label>
@@ -501,7 +516,7 @@
                     </div>
                 </div>
 
-                <div class="components__elem">
+                <div class="components__elem" style="margin-bottom: 200px;">
                     <div class="tag">
                         <div class="tag__target animated pulse infinite slow"></div> 
                         <div class="tag__label">
@@ -509,6 +524,187 @@
                             <div class="tag__profession">Помічник адвоката</div>
                         </div>
                     </div>
+                </div>
+
+                <div class="components__elem">
+                    <div class="commandListCard">
+                        <div class="commandListCard__tag">
+                            <div class="tag tag--reverse">
+                                <div class="tag__label">
+                                    <span class="tag__name">Тетяна Сільченко</span>
+                                    <div class="tag__profession">Помічник адвоката</div>
+                                </div>
+                                <div class="tag__target animated pulse infinite slow"></div> 
+                            </div>
+                        </div>
+                        <div class="commandListCard__img">
+                            <img class="imgMax" src="./img/command/cards/commandCard-4.png" alt="Персонаж">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <div class="tablist">
+                        <label class="tablist__item">
+                            <input class="tablist__input visually-hidden" type="radio" name="tablist" value="0" checked>
+                            <div class="tablist__content">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#tablist-document-check"></use></svg>
+                                <span class="tablist__text">Трудовий договір</span>
+                            </div>
+                        </label>
+                        <label class="tablist__item">
+                            <input class="tablist__input visually-hidden" type="radio" name="tablist" value="1">
+                            <div class="tablist__content">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#tablist-users"></use></svg>
+                                <span class="tablist__text">Колективний договір</span>
+                            </div>
+                        </label>
+                        <label class="tablist__item">
+                            <input class="tablist__input visually-hidden" type="radio" name="tablist" value="2">
+                            <div class="tablist__content">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#tablist-user-remove"></use></svg>
+                                <span class="tablist__text">Безпечне звільнення працівників</span>
+                            </div>
+                        </label>
+                        <label class="tablist__item">
+                            <input class="tablist__input visually-hidden" type="radio" name="tablist" value="3">
+                            <div class="tablist__content">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#tablist-edit-alt"></use></svg>
+                                <span class="tablist__text">Встановлення нетипових умов праці</span>
+                            </div>
+                        </label>
+                        <label class="tablist__item">
+                            <input class="tablist__input visually-hidden" type="radio" name="tablist" value="4">
+                            <div class="tablist__content">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#tablist-megaphone"></use></svg>
+                                <span class="tablist__text">Притягнення працівників до відповідальності</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Проєкти</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Публікації</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div class="components__elem">
+                    <ul class="menu menu--column">
+                        <li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Проєкти</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Публікації</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div class="components__elem">
+                    <div class="socialMenu">
+                        <a class="socialMenu__link" href="#">
+                            <div class="socialMenu__icon">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#call"></use></svg>
+                            </div>
+                            <span class="socialMenu__text baseLink">+38 050 300 83 87</span>
+                        </a>
+                        <a class="socialMenu__link" href="#">
+                            <div class="socialMenu__icon">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#email"></use></svg>
+                            </div>
+                            <span class="socialMenu__text baseLink">roland_law@ukr.net</span>
+                        </a>
+                        <a class="socialMenu__link" href="#">
+                            <div class="socialMenu__icon">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#location"></use></svg>
+                            </div>
+                            <span class="socialMenu__text baseLink">м. Харків, вул. Пушкінська, буд. 61, літ. "Д-1"</span>
+                        </a>
+
+                        <div class="socialMenu__qrcode">
+                            <img class="imgMax" src="./img/qr-code.png" alt="QR CODE">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <div class="socialMenu socialMenu--inline">
+                        <a class="socialMenu__link" href="#">
+                            <div class="socialMenu__icon">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#call"></use></svg>
+                            </div>
+                            <span class="socialMenu__text baseLink">+38 050 300 83 87</span>
+                        </a>
+                        <a class="socialMenu__link" href="#">
+                            <div class="socialMenu__icon">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#email"></use></svg>
+                            </div>
+                            <span class="socialMenu__text baseLink">roland_law@ukr.net</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <div class="footerMeta">
+                        <a class="footerMeta__link baseLink" href="#">Політика конфіденційності</a>
+                        <div class="footerMeta__social">
+                            <a class="footerMeta__socialLink" href="#">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#social_instagram"></use></svg>
+                            </a>
+                            <a class="footerMeta__socialLink" href="#">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#social_youtube"></use></svg>
+                            </a>
+                            <a class="footerMeta__socialLink" href="#">
+                                <svg class="tablist__icon"><use xlink:href="img/main.svg#social_facebook"></use></svg>
+                            </a>
+                        </div>
+                        <div class="footerMeta__rights">
+                            <span>Developed by TheChampGuess</span>
+                            <span>© 2021 Roland</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <div class="reviewsPerson">
+                        <div class="reviewsPerson__img">
+                            <img class="imgMax" src="./img/person.png" alt="Аватар">
+                        </div>
+                        <h4 class="reviewsPerson__title">Олег Харченко</h4>
+                        <span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <div class="reviewsContent">
+                        <div class="reviewsContent__quote">
+                            <img src="./img/quote.svg" alt="Кавычка">
+                        </div>
+                        <p class="reviewsContent__text">
+                            Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
+                            Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
+                            Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера
+                        </p>
+                    </div>
+                </div>
+
+                <div class="components__elem">
+                    <label class="c-field">
+                        <div class="c-field__area c-field__area--icon c-field__area--iconDouble">
+                            <div class="c-field__icon c-field__icon--left" role="button">
+                                <svg>
+                                    <use xlink:href='img/main.svg#close'></use>
+                                </svg>
+                            </div>
+                            <input class="c-field__input" type="text" placeholder="Найди меня!" />
+                            <svg class="c-field__icon">
+                                <use xlink:href='img/main.svg#loupe'></use>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
 
             </div>

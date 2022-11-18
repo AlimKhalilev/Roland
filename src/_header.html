@@ -17,27 +17,49 @@
         </div>
 
         <div class="header__controls" data-burger="menu">
-            <nav class="header__links">
-                <ul class="header__menu menu">
-                    <li class="menu__item @@main"><a class="menu__link" href="./">Главная</a></li>
-                    <li class="menu__item @@components"><a class="menu__link" href="./components.html">Компоненты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./img/symbol/sprite.symbol.html" target="_blank">Спрайты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#" data-scroll=".scrollBlock">Скролл</a></li>
-                </ul>
-            </nav>
-            <div class="header__select">
-
-                <div class="c-select" data-customSelect data-mouseLeave>
-                    <svg class='c-select__icon icon icon-arrow-down'><use xlink:href='img/sprite.svg#arrow-down'></use></svg>
-                    <select name="mySelect">
-                        <option disabled>Выберите героя</option>
-                        <option value="Чебурашка">Чебурашка</option>
-                        <option selected value="Крокодил Гена">Крокодил Гена</option>
-                        <option value="Шапокляк">Шапокляк</option>
-                        <option value="Крыса Лариса">Крыса Лариса</option>
-                    </select>
+            <div class="header__search">
+                <div class="socialMenu__icon">
+                    <svg class="tablist__icon"><use xlink:href="img/main.svg#loupe"></use></svg>
                 </div>
 
+                <label class="c-field">
+                    <div class="c-field__area c-field__area--icon c-field__area--iconDouble">
+                        <div class="c-field__icon c-field__icon--left" role="button">
+                            <svg>
+                                <use xlink:href='img/main.svg#close'></use>
+                            </svg>
+                        </div>
+                        <input class="c-field__input" type="text" placeholder="Пошук..." />
+                        <svg class="c-field__icon">
+                            <use xlink:href='img/main.svg#loupe'></use>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <nav class="header__links">
+                <ul class="header__menu menu">
+                    <li class="menu__item @@components"><a class="menu__link" href="./components.html">Продукти</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Проєкти</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Публікації</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header__social">
+                <div class="socialMenu socialMenu--inline">
+                    <a class="socialMenu__link" href="#">
+                        <div class="socialMenu__icon">
+                            <svg class="tablist__icon"><use xlink:href="img/main.svg#call"></use></svg>
+                        </div>
+                        <span class="socialMenu__text baseLink">+38 050 300 83 87</span>
+                    </a>
+                    <a class="socialMenu__link" href="#">
+                        <div class="socialMenu__icon">
+                            <svg class="tablist__icon"><use xlink:href="img/main.svg#email"></use></svg>
+                        </div>
+                        <span class="socialMenu__text baseLink">roland_law@ukr.net</span>
+                    </a>
+                </div>
             </div>
         </div>
 

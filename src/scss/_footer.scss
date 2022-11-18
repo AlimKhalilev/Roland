@@ -1,18 +1,98 @@
 // === Footer [ Стили для футера, используемые на всех страницах ] ===
 
 .footer {
-    background-color: $color_primary;
-    padding: 1.5rem 0;
-    
+
+    // .footer__inner
+
     &__inner {
         display: flex;
-        justify-content: space-between;
-    
-        p {
-            color: $color_white;
+        height: 95%;
+        align-items: center;
+    }
+
+    // .footer__main
+
+    &__main {
+
+    }
+
+    // .footer__container
+
+    &__container {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    // .footer__header
+
+    &__header {
+
+    }
+
+    // .footer__title
+
+    &__title {
+
+    }
+
+    // .footer__subtitle
+
+    &__subtitle {
+        display: block;
+        line-height: 1;
+        font-size: 1.875rem;
+        color: $color_white;
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    // .footer__social
+
+    &__social {
+
+    }
+
+    // .footer__map
+
+    &__map {
+        margin-top: 2rem;
+
+        picture {
+            display: inline-flex;
+        }
+
+        img {
+            border-radius: 0.4rem;
         }
     }
-    
+
+    // .footer__other
+
+    &__other {
+        min-width: 16rem;
+        max-width: 16rem;
+        margin-left: 10rem;
+    }
+
+    // .footer__search
+
+    &__search {
+
+    }
+
+    // .footer__links
+
+    &__links {
+        padding: 2rem 0;
+        margin: 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    // .footer__rights
+
+    &__rights {
+
+    }
 }
 
 // === / Footer ===
