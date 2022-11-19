@@ -138,7 +138,6 @@
 
     &__link {
         text-decoration: none;
-
         display: flex;
         align-items: center;
 
@@ -150,7 +149,8 @@
     // .socialMenu__icon
 
     &__icon {
-        width: 2rem;
+        min-width: 2rem;
+        max-width: 2rem;
         height: 2rem;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.1);
@@ -158,7 +158,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 1rem;
 
         svg {
             width: 1rem;
@@ -170,7 +169,7 @@
     // .socialMenu__text
 
     &__text {
-
+        margin-left: 1rem;
     }
 
     &__qrcode {
@@ -275,6 +274,10 @@
         position: absolute;
         left: -4.8rem;
         top: -3.8rem;
+
+        @media ($media_sm) {
+            left: -2.5rem;
+        }
     }
 
     // .reviewsContent__text
@@ -338,9 +341,62 @@
         display: inline-flex;
         justify-content: flex-end;
         width: 50%;
+        height: 100%;
+        align-items: flex-end;
 
         picture {
             display: inline-flex;
+            align-items: flex-end;
+            height: 100%;
+
+            img {
+                max-height: 100%;
+            }
         }
+    }
+}
+
+.scrollText {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include cursorPointer;
+    animation: moveScrollText 2s linear infinite alternate;
+
+    // .scrollText--reverse
+
+    &--reverse {
+        .scrollText__img {
+            transform: rotate(270deg);
+        }
+    }
+
+    // .scrollText__img
+
+    &__img {
+        transform: rotate(90deg);
+        width: 0.6rem;
+    }
+
+    // .scrollText__title
+
+    &__title {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $color_white;
+        text-transform: uppercase;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.05em;
+    }
+}
+
+@keyframes moveScrollText {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1rem);
     }
 }

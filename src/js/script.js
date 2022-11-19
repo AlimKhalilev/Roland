@@ -33,8 +33,7 @@ let header_search_hide = document.querySelector(".header__search .c-field__icon-
 let header_search_class_container = document.querySelector(".header__controls");
 
 if (header_search_show !== null && header_search_hide !== null && header_search_class_container !== null) {
-
-    console.log("eee");
+    
     header_search_show.addEventListener("click", (e) => {
         header_search_class_container.classList.toggle("searchActive");
     });

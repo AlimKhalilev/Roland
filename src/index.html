@@ -22,7 +22,15 @@
 									<button class="btn btn--primary animated delay-1s" data-animation="fadeInLeft" data-modal="modal_сontact">Зв'язатися з нами</button>
 								</div>
 							</div>
+
+							<div class="main__scrollBlock scrollText">
+								<img class="scrollText__img" src="./img/slide_arrow.svg" alt="Иконка стрелки">
+								<span class="scrollText__title">дізнатись більше</span>
+								<img class="scrollText__img" src="./img/slide_arrow.svg" alt="Иконка стрелки">
+							</div>
 						</div>
+
+						<div class="overlay overlay--burger"></div>
 					</section>
 
 					<section class="fullPage__section swiper-slide">
@@ -73,7 +81,7 @@
 						</div>
 					</section>
 
-					<section class="fullPage__section fullPage__section--bgLight swiper-slide">
+					<section class="fullPage__section fullPage__section--bgLight swiper-slide" data-simpleScroll="2">
 						<div class="pageSection gridInner products">
 							<div class="pageSection__inner products__inner">
 								<div class="products__header">
@@ -218,57 +226,7 @@
 						</div>
 					</section>
 
-					<!-- <section class="fullPage__section swiper-slide">
-						<div class="command pageSection">
-							<div class="pageSection__inner gridInner command__container">
-								<div class="command__header">
-									<h2 class="command__title blockTitle">Команда</h2>
-								</div>
-								<div class="command__picture">
-									<img class="imgMax" src="./img/command/command.png" alt="Команда">
-
-									<div class="tag tag--reverse" style="left: 50%; transform: translateX(-56vh); top: 24%;">
-										<div class="tag__target animated pulse infinite slow" data-modal="modal_command_1"></div> 
-										<div class="tag__label">
-											<span class="tag__name">Сергій Харитонов</span>
-											<div class="tag__profession">Помічник адвоката</div>
-										</div>
-									</div>
-									<div class="tag" style="left: 50%; top: 76%; transform: translateX(-160%);">
-										<div class="tag__target animated pulse infinite slow" data-modal="modal_command_2"></div> 
-										<div class="tag__label">
-											<span class="tag__name">Іван Колеснік</span>
-											<div class="tag__profession">Молодший юрист</div>
-										</div>
-									</div>
-									<div class="tag tag--reverse" style="left: 50%; top: 25%; transform: translateX(-105%);">
-										<div class="tag__target animated pulse infinite slow" data-modal="modal_command_3"></div> 
-										<div class="tag__label">
-											<span class="tag__name">Сергій Сільченко</span>
-											<div class="tag__profession">Керуючий <br>партнер, адвокат</div>
-										</div>
-									</div>
-									<div class="tag" style="left: 50%; top: 52%; transform: translateX(50%);">
-										<div class="tag__target animated pulse infinite slow" data-modal="modal_command_4"></div> 
-										<div class="tag__label">
-											<span class="tag__name">Тетяна Сільченко</span>
-											<div class="tag__profession">Партнер, адвокат</div>
-										</div>
-									</div>
-									<div class="tag" style="left: 50%; top: 27%; transform: translateX(35vh);">
-										<div class="tag__target animated pulse infinite slow" data-modal="modal_command_5"></div> 
-										<div class="tag__label">
-											<span class="tag__name">Данило Кравцов</span>
-											<div class="tag__profession">Адвокат</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</section> -->
-
-					<section class="fullPage__section swiper-slide">
+					<section class="fullPage__section swiper-slide" data-simpleScroll="3">
 						<div class="pageSection gridInner projects__container newCommand">
 							<div class="pageSection__inner">
 								<div class="projects__header">
@@ -360,7 +318,7 @@
 						</div>
 					</section>
 
-					<section class="fullPage__section fullPage__section--bgLight swiper-slide">
+					<section class="fullPage__section fullPage__section--bgLight swiper-slide" data-simpleScroll="4">
 						<div class="projects">
 							<span class="projects__bg">ROLAND</span>
 							<div class="pageSection gridInner projects__container">
@@ -477,77 +435,83 @@
 						<div class="pageSection gridInner reviews">
 							<div class="pageSection__inner reviews__inner">
 								<div class="reviews__header">
-									<h2 class="blockTitle animated" data-animation="fadeInDown">Відгуки</span>
+									<h2 class="blockTitle animated" data-animation="fadeInLeft">Відгуки</span>
 								</div>
 								<div class="reviews__body">
 									<div class="reviews__swiper">
 										<div class="swiper-wrapper">
 											<div class="reviews__swiperSlide swiper-slide">
-												<div class="reviews__person">
-													<div class="reviewsPerson">
-														<div class="reviewsPerson__img">
-															<img class="imgMax" src="./img/person.png" alt="Аватар">
+												<div class="reviews__swiperContent">
+													<div class="reviews__person">
+														<div class="reviewsPerson">
+															<div class="reviewsPerson__img">
+																<img class="imgMax" src="./img/person.png" alt="Аватар">
+															</div>
+															<h4 class="reviewsPerson__title">Олег Харченко</h4>
+															<span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
 														</div>
-														<h4 class="reviewsPerson__title">Олег Харченко</h4>
-														<span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
 													</div>
-												</div>
-												<div class="reviews__content">
-													<div class="reviewsContent">
-														<div class="reviewsContent__quote">
-															<img src="./img/quote.svg" alt="Кавычка">
+													<div class="reviews__content">
+														<div class="reviewsContent">
+															<div class="reviewsContent__quote">
+																<img src="./img/quote.svg" alt="Кавычка">
+															</div>
+															<p class="reviewsContent__text">
+																Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
+																Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
+																Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера
+															</p>
 														</div>
-														<p class="reviewsContent__text">
-															Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
-															Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
-															Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="reviews__swiperSlide swiper-slide">
-												<div class="reviews__person">
-													<div class="reviewsPerson">
-														<div class="reviewsPerson__img">
-															<img class="imgMax" src="./img/person-2.png" alt="Аватар">
-														</div>
-														<h4 class="reviewsPerson__title">Олег Харченко 2</h4>
-														<span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
-													</div>
-												</div>
-												<div class="reviews__content">
-													<div class="reviewsContent">
-														<div class="reviewsContent__quote">
-															<img src="./img/quote.svg" alt="Кавычка">
-														</div>
-														<p class="reviewsContent__text">
-															Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
-															Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
-															Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера 2
-														</p>
 													</div>
 												</div>
 											</div>
 											<div class="reviews__swiperSlide swiper-slide">
-												<div class="reviews__person">
-													<div class="reviewsPerson">
-														<div class="reviewsPerson__img">
-															<img class="imgMax" src="./img/person-3.png" alt="Аватар">
+												<div class="reviews__swiperContent">
+													<div class="reviews__person">
+														<div class="reviewsPerson">
+															<div class="reviewsPerson__img">
+																<img class="imgMax" src="./img/person-2.png" alt="Аватар">
+															</div>
+															<h4 class="reviewsPerson__title">Олег Харченко 2</h4>
+															<span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
 														</div>
-														<h4 class="reviewsPerson__title">Олег Харченко 3</h4>
-														<span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
+													</div>
+													<div class="reviews__content">
+														<div class="reviewsContent">
+															<div class="reviewsContent__quote">
+																<img src="./img/quote.svg" alt="Кавычка">
+															</div>
+															<p class="reviewsContent__text">
+																Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
+																Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
+																Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера
+															</p>
+														</div>
 													</div>
 												</div>
-												<div class="reviews__content">
-													<div class="reviewsContent">
-														<div class="reviewsContent__quote">
-															<img src="./img/quote.svg" alt="Кавычка">
+											</div>
+											<div class="reviews__swiperSlide swiper-slide">
+												<div class="reviews__swiperContent">
+													<div class="reviews__person">
+														<div class="reviewsPerson">
+															<div class="reviewsPerson__img">
+																<img class="imgMax" src="./img/person-3.png" alt="Аватар">
+															</div>
+															<h4 class="reviewsPerson__title">Олег Харченко 3</h4>
+															<span class="reviewsPerson__about">Власник групи компаній «Партнер»</span>
 														</div>
-														<p class="reviewsContent__text">
-															Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
-															Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
-															Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера 3
-														</p>
+													</div>
+													<div class="reviews__content">
+														<div class="reviewsContent">
+															<div class="reviewsContent__quote">
+																<img src="./img/quote.svg" alt="Кавычка">
+															</div>
+															<p class="reviewsContent__text">
+																Усі питання, з якими ми звертаємось до Адвокатського об’єднання «Роланд», вирішуються якісно і швидко. 
+																Можу впевнено стверджувати, що там працюють високопрофесійні та порядні юристи, які вміють робити свою роботу. 
+																Я задоволений співпрацею і можу рекомендувати АО «Роланд як надійного партнера
+															</p>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -572,12 +536,12 @@
 						</div>
 					</section>
 
-					<section class="fullPage__section fullPage__section--bgLight swiper-slide">
+					<section class="fullPage__section fullPage__section--bgLight swiper-slide" data-simpleScroll="6">
 						<div class="publications">
 							<div class="pageSection gridInner publications__container">
 								<div class="pageSection__inner">
 									<div class="publications__header">
-										<h2 class="publications__title blockTitle animated" data-animation="fadeInLeft">Публікації</h2>
+										<h2 class="publications__title blockTitle animated" data-animation="fadeInDown">Публікації</h2>
 										<div class="publications__pagination">
 											<div class="swiper-button swiper-button-prev"></div>
 											<div class="swiper-button swiper-button-next"></div>
@@ -656,7 +620,7 @@
 						</div>
 					</section>
 
-					<footer class="fullPage__section swiper-slide">
+					<footer class="fullPage__section swiper-slide" data-simpleScroll="7">
 						<div class="pageSection gridInner footer">
 							<div class="pageSection__inner footer__inner">
 								<div class="footer__container">
@@ -691,7 +655,7 @@
 					
 											</div>
 										</div>
-										<div class="footer__map animated delay-3s" data-animation="fadeInUp">
+										<div class="footer__map">
 											<img class="imgMax" src="./img/footer_map.png" alt="Карта">
 										</div>
 									</div>
@@ -699,7 +663,7 @@
 										<div class="footer__search">
 											<label class="input-group__elem c-field">
 												<div class="c-field__area c-field__area--icon">
-													<input class="c-field__input" type="text" placeholder="Найди меня!" />
+													<input class="c-field__input" type="text" placeholder="Пошук..." />
 													<svg class="c-field__icon">
 														<use xlink:href='img/main.svg#loupe'></use>
 													</svg>
@@ -708,11 +672,11 @@
 										</div>
 										<div class="footer__links">
 											<ul class="menu menu--column">
-												<li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
-												<li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
-												<li class="menu__item"><a class="menu__link" href="#">Проєкти</a></li>
-												<li class="menu__item"><a class="menu__link" href="#">Публікації</a></li>
-												<li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+												<li class="menu__item"><a class="menu__link" href="#" data-scrollSection="2">Продукти</a></li>
+												<li class="menu__item"><a class="menu__link" href="#" data-scrollSection="3">Команда</a></li>
+												<li class="menu__item"><a class="menu__link" href="#" data-scrollSection="4">Проєкти</a></li>
+												<li class="menu__item"><a class="menu__link" href="#" data-scrollSection="6">Публікації</a></li>
+												<li class="menu__item"><a class="menu__link" href="#" data-scrollSection="7">Контакти</a></li>
 											</ul>
 										</div>
 										<div class="footer__rights">
@@ -736,6 +700,12 @@
 											</div>
 										</div>
 									</div>
+								</div>
+
+								<div class="footer__scrollBlock scrollText scrollText--reverse">
+									<img class="scrollText__img" src="./img/slide_arrow.svg" alt="Иконка стрелки">
+									<span class="scrollText__title">наверх</span>
+									<img class="scrollText__img" src="./img/slide_arrow.svg" alt="Иконка стрелки">
 								</div>
 							</div>
 						</div>

@@ -5,6 +5,7 @@
     // .footer__inner
 
     &__inner {
+        position: relative;
         display: flex;
         height: 95%;
         align-items: center;
@@ -21,6 +22,10 @@
     &__container {
         display: flex;
         align-items: flex-end;
+
+        @media ($media_sm) {
+            flex-direction: column;
+        }
     }
 
     // .footer__header
@@ -71,12 +76,34 @@
         min-width: 16rem;
         max-width: 16rem;
         margin-left: 10rem;
+
+        @media ($media_md) {
+            margin-left: 6rem;
+        }
+
+        @media ($media_sm) {
+            min-width: 100%;
+            max-width: 100%;
+            margin: 2rem 0 0 0;
+        }
     }
 
     // .footer__search
 
     &__search {
 
+    }
+
+    // .footer__scrollBlock
+
+    &__scrollBlock {
+        position: absolute;
+        right: 0;
+        top: 42%;
+
+        @media ($media_md) {
+            display: none;
+        }
     }
 
     // .footer__links

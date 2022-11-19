@@ -12,12 +12,19 @@
     border-radius: 0.25rem;
     background-color: $color_bg_modal;
     width: 25rem;
+    max-height: calc(100vh - 10rem);
+    display: flex;
 
     &--command {
         padding: 0;
         background-color: $color_bg_secondary;
         width: 70rem;
+
+        @media ($media_lg) {
+            width: 90%;
+        }
     }
+
 
     &.visible {
         top: 50%;

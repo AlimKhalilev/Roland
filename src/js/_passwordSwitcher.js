@@ -1,5 +1,5 @@
 function inputChangeTypePassword() {
-    let pathSvg = "img/sprite.svg";
+    let pathSvg = "img/main.svg";
     let iconsNames = ["#eye_open", "#eye_close"];
 
     document.querySelectorAll("[data-passwordSwitcher]").forEach(item => {

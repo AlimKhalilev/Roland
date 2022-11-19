@@ -1,7 +1,10 @@
 .animated {
   animation-duration: var(--animate-duration);
   animation-fill-mode: both;
-  opacity: 0;
+
+  &:not(.infinite) {
+    opacity: 0;
+  }
 }
 
 .animated.infinite {

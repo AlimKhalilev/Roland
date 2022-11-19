@@ -2,14 +2,16 @@ class Scroll {
     static overlayBurger = document.querySelector(".overlay--burger");
 
     static checkBeforeMove() {
-        if (this.overlayBurger.classList.contains("visible")) { // если в момент клика открыта шторка бургер-меню
-            BurgerMenu.toggle(); // закрываем ее
+        if (this.overlayBurger !== null) {
+            if (this.overlayBurger.classList.contains("visible")) { // если в момент клика открыта шторка бургер-меню
+                BurgerMenu.toggle(); // закрываем ее
+            }
         }
     }
 
     static moveTo(target) {
         this.checkBeforeMove();
-        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(`[data-simpleScroll='${target}']`).scrollIntoView({ behavior: 'smooth' });
     }
 
     static initEvents() {
